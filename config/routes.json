@@ -1,0 +1,20 @@
+{
+  "index": {
+    "route": "/"
+  },
+  "article::index": {
+    "route": "/articles"
+  },
+  "article::show": {
+    "route": "/article/{id}",
+    "params": {
+      "id": ".+"
+    }
+  },
+  "user::auth": {
+    "route": "/user/auth"
+  },
+  "favicon": {
+    "route": "/favicon.ico"
+  }
+}

@@ -1,0 +1,108 @@
+09/01/2017 ~ 14:15 [info] new GET request on /
+09/01/2017 ~ 14:15 [info] \Blog\Views\IndexView intersept request::index
+09/01/2017 ~ 14:15 [info] \Blog\Views\NavigationView intersept request::*
+09/01/2017 ~ 14:15 [info] \Blog\Views\User\UserAuthView intersept render::navigation
+09/01/2017 ~ 14:15 [info] no sess
+09/01/2017 ~ 14:15 [info] 
+09/01/2017 ~ 14:16 [info] new GET request on /
+09/01/2017 ~ 14:16 [info] \Blog\Views\IndexView intersept request::index
+09/01/2017 ~ 14:16 [info] \Blog\Views\NavigationView intersept request::*
+09/01/2017 ~ 14:16 [info] \Blog\Views\User\UserAuthView intersept render::navigation
+09/01/2017 ~ 14:16 [info] no sess
+09/01/2017 ~ 14:16 [info] 
+09/01/2017 ~ 14:16 [info] new GET request on /
+09/01/2017 ~ 14:16 [info] \Blog\Views\IndexView intersept request::index
+09/01/2017 ~ 14:16 [info] \Blog\Views\NavigationView intersept request::*
+09/01/2017 ~ 14:16 [info] \Blog\Views\User\UserAuthView intersept render::navigation
+09/01/2017 ~ 14:16 [info] no sess
+09/01/2017 ~ 14:16 [info] 
+09/01/2017 ~ 14:16 [info] new GET request on /
+09/01/2017 ~ 14:16 [info] \Blog\Views\IndexView intersept request::index
+09/01/2017 ~ 14:16 [info] \Blog\Views\NavigationView intersept request::*
+09/01/2017 ~ 14:16 [info] \Blog\Views\User\UserAuthView intersept render::navigation
+09/01/2017 ~ 14:16 [info] no sess
+09/01/2017 ~ 14:16 [info] 
+09/01/2017 ~ 14:16 [info] new GET request on /
+09/01/2017 ~ 14:16 [info] \Blog\Views\IndexView intersept request::index
+09/01/2017 ~ 14:16 [info] \Blog\Views\NavigationView intersept request::*
+09/01/2017 ~ 14:16 [info] \Blog\Views\User\UserAuthView intersept render::navigation
+09/01/2017 ~ 14:16 [info] no sess
+09/01/2017 ~ 14:16 [info] 
+09/01/2017 ~ 14:16 [info] new GET request on /
+09/01/2017 ~ 14:16 [info] \Blog\Views\IndexView intersept request::index
+09/01/2017 ~ 14:16 [info] \Blog\Views\NavigationView intersept request::*
+09/01/2017 ~ 14:16 [info] \Blog\Views\User\UserAuthView intersept render::navigation
+09/01/2017 ~ 14:16 [info] no sess
+09/01/2017 ~ 14:16 [info] 
+09/01/2017 ~ 14:17 [info] new POST request on /user/auth
+09/01/2017 ~ 14:17 [info] \Blog\Actions\User\AuthAction intersept request::user::auth
+09/01/2017 ~ 14:17 [info] onPost method called
+09/01/2017 ~ 14:17 [info] On post mother fucker !!!!!
+09/01/2017 ~ 14:17 [info] no sess
+09/01/2017 ~ 14:17 [info] 
+09/01/2017 ~ 14:17 [info] new GET request on /
+09/01/2017 ~ 14:17 [info] \Blog\Views\IndexView intersept request::index
+09/01/2017 ~ 14:17 [info] \Blog\Views\NavigationView intersept request::*
+09/01/2017 ~ 14:17 [info] \Blog\Views\User\UserAuthView intersept render::navigation
+09/01/2017 ~ 14:17 [info] sess
+09/01/2017 ~ 14:17 [info] q62ktur3dagjnek01in8s5vgg1
+09/01/2017 ~ 14:18 [info] new GET request on /
+09/01/2017 ~ 14:18 [info] \Blog\Views\IndexView intersept request::index
+09/01/2017 ~ 14:18 [info] \Blog\Views\NavigationView intersept request::*
+09/01/2017 ~ 14:18 [info] \Blog\Views\User\UserAuthView intersept render::navigation
+09/01/2017 ~ 14:18 [info] sess
+09/01/2017 ~ 14:18 [info] q62ktur3dagjnek01in8s5vgg1
+09/01/2017 ~ 14:18 [info] new GET request on /
+09/01/2017 ~ 14:18 [info] \Blog\Views\IndexView intersept request::index
+09/01/2017 ~ 14:18 [info] \Blog\Views\NavigationView intersept request::*
+09/01/2017 ~ 14:18 [info] \Blog\Views\User\UserAuthView intersept render::navigation
+09/01/2017 ~ 14:18 [info] sess
+09/01/2017 ~ 14:18 [info] q62ktur3dagjnek01in8s5vgg1
+09/01/2017 ~ 14:19 [info] new GET request on /
+09/01/2017 ~ 14:19 [info] \Blog\Views\IndexView intersept request::index
+09/01/2017 ~ 14:19 [info] \Blog\Views\NavigationView intersept request::*
+09/01/2017 ~ 14:19 [info] \Blog\Views\User\UserAuthView intersept render::navigation
+09/01/2017 ~ 14:19 [info] sess
+09/01/2017 ~ 14:19 [info] q62ktur3dagjnek01in8s5vgg1
+09/01/2017 ~ 14:19 [info] new GET request on /
+09/01/2017 ~ 14:19 [info] \Blog\Views\IndexView intersept request::index
+09/01/2017 ~ 14:19 [info] \Blog\Views\NavigationView intersept request::*
+09/01/2017 ~ 14:19 [info] \Blog\Views\User\UserAuthView intersept render::navigation
+09/01/2017 ~ 14:19 [info] sess
+09/01/2017 ~ 14:19 [info] q62ktur3dagjnek01in8s5vgg1
+09/01/2017 ~ 14:19 [info] new GET request on /
+09/01/2017 ~ 14:19 [info] \Blog\Views\IndexView intersept request::index
+09/01/2017 ~ 14:19 [info] \Blog\Views\NavigationView intersept request::*
+09/01/2017 ~ 14:19 [info] \Blog\Views\User\UserAuthView intersept render::navigation
+09/01/2017 ~ 14:19 [info] sess
+09/01/2017 ~ 14:19 [info] q62ktur3dagjnek01in8s5vgg1
+09/01/2017 ~ 14:19 [info] new GET request on /
+09/01/2017 ~ 14:19 [info] \Blog\Views\IndexView intersept request::index
+09/01/2017 ~ 14:19 [info] \Blog\Views\NavigationView intersept request::*
+09/01/2017 ~ 14:19 [info] \Blog\Views\User\UserAuthView intersept render::navigation
+09/01/2017 ~ 14:19 [info] sess
+09/01/2017 ~ 14:19 [info] q62ktur3dagjnek01in8s5vgg1
+09/01/2017 ~ 14:19 [info] new GET request on /
+09/01/2017 ~ 14:19 [info] \Blog\Views\IndexView intersept request::index
+09/01/2017 ~ 14:19 [info] \Blog\Views\NavigationView intersept request::*
+09/01/2017 ~ 14:19 [info] \Blog\Views\User\UserAuthView intersept render::navigation
+09/01/2017 ~ 14:19 [info] sess
+09/01/2017 ~ 14:19 [info] q62ktur3dagjnek01in8s5vgg1
+09/01/2017 ~ 14:19 [info] new GET request on /
+09/01/2017 ~ 14:19 [info] \Blog\Views\IndexView intersept request::index
+09/01/2017 ~ 14:19 [info] \Blog\Views\NavigationView intersept request::*
+09/01/2017 ~ 14:19 [info] \Blog\Views\User\UserAuthView intersept render::navigation
+09/01/2017 ~ 14:19 [info] sess
+09/01/2017 ~ 14:19 [info] q62ktur3dagjnek01in8s5vgg1
+09/01/2017 ~ 14:19 [info] new GET request on /
+09/01/2017 ~ 14:19 [info] \Blog\Views\IndexView intersept request::index
+09/01/2017 ~ 14:19 [info] \Blog\Views\NavigationView intersept request::*
+09/01/2017 ~ 14:19 [info] \Blog\Views\User\UserAuthView intersept render::navigation
+09/01/2017 ~ 14:19 [info] sess
+09/01/2017 ~ 14:19 [info] q62ktur3dagjnek01in8s5vgg1
+09/01/2017 ~ 14:19 [info] new GET request on /
+09/01/2017 ~ 14:19 [info] \Blog\Views\IndexView intersept request::index
+09/01/2017 ~ 14:19 [info] \Blog\Views\NavigationView intersept request::*
+09/01/2017 ~ 14:19 [info] \Blog\Views\User\UserAuthView intersept render::navigation
+09/01/2017 ~ 14:19 [info] sess
+09/01/2017 ~ 14:19 [info] q62ktur3dagjnek01in8s5vgg1

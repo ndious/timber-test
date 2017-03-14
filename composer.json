@@ -1,0 +1,16 @@
+{
+  "require": {
+    "ndufreche/tiimber": "dev-master",
+    "mustache/mustache": "^2.10",
+    "gabordemooij/redbean": "dev-master",
+    "react/react": "^0.4.2"
+  },
+  "require-dev": {
+    "ndufreche/tiimber-cli": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Blog\\": "Blog/"
+    }
+  }
+}

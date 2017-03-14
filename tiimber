@@ -1,0 +1,74 @@
+#! /bin/bash
+# /etc/init.d/tiimber
+
+### BEGIN INIT INFO
+# Provides: fatratWS
+# Required-Start: $network $local_fs $remote_fs
+# Required-Stop: $network $local_fs $remote_fs
+# Default-Start: 2 3 4 5
+# Default-Stop: 0 1 6
+# Short-Description: fatratWS init script.
+# Description: Starts and stops fatrat Web Server services.
+### END INIT INFO
+
+#VAR
+PID_FILE='/var/run/tiimber.pid'
+if [ -s $PID_FILE ]; then
+  PID=$(cat $PID_FILE)
+  if ! kill -0 $PID > /dev/null 2>&1; then
+    echo '' > $PID_FILE
+    PID=''
+  fi
+fi
+
+# Carry out specific functions when asked to by the system
+case "$1" in
+  start)
+    echo "Starting tiimber server"
+    if [ -z $PID ]; then
+      php server.php > file.log 2>&1 &
+      echo $(pidof php) > $PID_FILE
+      echo "Started"
+    else
+      echo "Tiimber server already started"
+    fi
+    ;;
+  stop)
+    echo "Stopping tiimber server"
+    if [ ! -z $PID ]; then
+      kill $PID
+      echo '' > $PID_FILE
+      echo "OK"
+    else
+      echo "Error"
+    fi
+    ;;
+  status)
+    if [ ! -z $PID ]; then
+      PID=$(cat $PID_FILE)
+      echo "The tiimber server is running with PID = "$PID
+    else
+      echo "Tiimber server is not running"
+    fi
+    ;;
+  reload)
+    echo "Reloading tiimber server"
+    if [ ! -z $PID ]; then
+      kill $PID
+      echo '' > $PID_FILE
+      echo "Server stop"
+      PID=''
+    fi
+    if [ -z $PID ]; then
+      php server.php > file.log 2>&1 &
+      echo $(pidof php) > $PID_FILE
+      echo "Server started"
+    fi
+    ;;
+  *)
+    echo "Usage: /etc/init.d/tiimber {start|stop|status}"
+    exit 1
+    ;;
+esac
+
+exit 0
