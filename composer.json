@@ -3,7 +3,9 @@
     "ndufreche/tiimber": "dev-master",
     "mustache/mustache": "^2.10",
     "gabordemooij/redbean": "dev-master",
-    "react/react": "^0.4.2"
+    "react/react": "^0.4.2",
+    "rikbruil/php-redux": "^1.0@dev",
+    "blackfire/php-sdk": "^1.5@dev"
   },
   "require-dev": {
     "ndufreche/tiimber-cli": "dev-master"
@@ -11,6 +13,10 @@
   "autoload": {
     "psr-4": {
       "Blog\\": "Blog/"
-    }
-  }
+    },
+    "file": [
+      "Blog/includes.php"
+    ]
+  },
+  "minimum-stability": "dev"
 }

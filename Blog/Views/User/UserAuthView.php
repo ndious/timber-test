@@ -29,6 +29,14 @@ EOF;
     $this->session = $req->getSession();
   }
 
+  public function stateToProps(array $state, array $props): array
+  {
+    return [
+      'user' => $state->auth->has('user'),
+      'username' => $state->auth->get('user'),
+    ];
+  }
+
   public function render(): array
   {
     return [
