@@ -9,7 +9,9 @@ class BasicLayout extends View
 {
   use BasicComponents;
 
-  const TPL = <<<HTML
+  public function render(): string
+  {
+    return <<<HTML
 <!DOCTYPE html>
 <html>
   <head>
@@ -27,12 +29,6 @@ class BasicLayout extends View
   </body>
 </html>
 HTML;
-
-  public function render(array $state): array
-  {
-    return [
-      'test' => 'Power by tiimber',
-    ];
   }
 
 }

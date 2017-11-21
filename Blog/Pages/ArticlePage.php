@@ -2,22 +2,25 @@
 namespace Blog\Pages;
 
 use Tiimber\View;
-
 use Blog\Layouts\BasicLayout;
 
-class IndexPage extends View
+class ArticlePage extends View
 {
   const EXTEND = BasicLayout::class;
 
   const EVENTS = [
-    'request::index',
+    'request::article::index',
     'error::*',
   ];
+  
+  const TPL = <<<HTML
+<p>hello {{planet}}.</p>
+HTML;
 
   public function render(): string
   {
-    return <<<HTML
-<p>hello {{planet}}.</p>
-HTML;
+    return [
+      'planet' => 'article'
+    ];
   }
 }

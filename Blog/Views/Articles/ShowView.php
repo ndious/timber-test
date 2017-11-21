@@ -14,7 +14,7 @@ class ShowView extends View
     'request::article::show' => 'content'
   ];
 
-  const TPL = <<<EOF
+  const TPL = <<<HTML
 {{#user}}
   <form method="post">
     <input type="hidden" name="id" value="{{article.id}}">
@@ -27,7 +27,7 @@ class ShowView extends View
   <h1>{{article.title}}</h1>
   <p>{{article.content}}</p>
 {{/user}}
-EOF;
+HTML;
 
   private $article;
   private $logged;
@@ -42,8 +42,22 @@ EOF;
     }
   }
 
-  public function render(): array
+  public function render(): string
   {
-    return ['article' => $this->article, 'user' => $this->logged];
+    // return ['article' => $this->article, 'user' => $this->logged];
+    return <<<HTML
+{{#user}}
+  <form method="post">
+    <input type="hidden" name="id" value="{{article.id}}">
+    <p><input type="text" name="title" placeholder="Title" value="{{article.title}}"></p>
+    <p><textarea name="content">{{article.content}}</textarea></p>
+    <p><button type="submit">Submit</button></p>
+  </form>
+{{/user}}
+{{^user}}
+  <h1>{{article.title}}</h1>
+  <p>{{article.content}}</p>
+{{/user}}
+HTML;
   }
 }

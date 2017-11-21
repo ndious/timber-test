@@ -10,7 +10,7 @@ class UserAuthView extends View
     'render::navigation' => 'login'
   ];
 
-  const TPL = <<<EOF
+  const TPL = <<<HTML
 {{#user}}
   <b>Hello {{username}}!</b>
 {{/user}}
@@ -20,7 +20,7 @@ class UserAuthView extends View
     <button type="submit">Submit</button>
   </form>
 {{/user}}
-EOF;
+HTML;
 
   private $session;
 
@@ -37,8 +37,19 @@ EOF;
     ];
   }
 
-  public function render(): array
+  public function render(): string
   {
+    return <<<HTML
+  {{#user}}
+    <b>Hello {{username}}!</b>
+  {{/user}}
+  {{^user}}
+    <form method="post" action="/user/auth">
+      <input type="text" name="username" placeholder="Username">
+      <button type="submit">Submit</button>
+    </form>
+  {{/user}}
+  HTML;
     return [
       'user' => $this->session->has('user'),
       'username' => $this->session->get('user')

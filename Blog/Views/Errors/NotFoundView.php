@@ -10,7 +10,10 @@ class NotFoundView extends View
     'error::404' => 'content'
   ];
   
-  const TPL = <<<EOF
+  public function render(): string
+  {
+    return <<<HTML
 <div>Page not found</div>
-EOF;
+HTML;
+  }
 }

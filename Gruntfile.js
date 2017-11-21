@@ -38,6 +38,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-exec');
 
-  grunt.registerTask('default', ['watch:upload']);
-  grunt.registerTask('server', ['watch:server']);
+  grunt.registerTask('server', ['watch:upload']);
+  grunt.registerTask('default', ['watch:server']);
 };

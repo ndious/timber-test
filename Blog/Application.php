@@ -25,7 +25,7 @@ class Application
     (new Logger());
   }
 
-  private function declareStore()
+  private function declareReducers()
   {
     $reducer = new ComposedReducer();
     $reducer->addReducer('catalogue', getReducer());

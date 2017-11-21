@@ -11,10 +11,10 @@ class ServerErrorView extends View
     'error::500' => 'content'
   ];
   
-  const TPL = <<<EOF
+  const TPL = <<<HTML
 <div>{{message}}</div>
 <pre>{{stack}}</pre>
-EOF;
+HTML;
 
   private $error;
   
@@ -23,8 +23,12 @@ EOF;
     $this->error = $req->getArgs()->get('error');
   }
   
-  public function render(): array
+  public function render(): string
   {
+    return  <<<HTML
+<div>{{message}}</div>
+<pre>{{stack}}</pre>
+HTML;
     return [
       'message' => $this->error->getMessage(),
       'stack' => $this->error->getTraceAsString()

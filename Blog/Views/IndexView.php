@@ -9,12 +9,15 @@ class IndexView extends View
     'request::index' => 'content'
   ];
 
-  const TPL = <<<EOF
+  const TPL = <<<HTML
 <p>hello {{planet}}.</p>
-EOF;
+HTML;
 
-  public function render(): array
+  public function render(): string
   {
+    return <<<HTML
+<p>hello {{planet}}.</p>
+HTML;
     return ['planet' => 'earth'];
   }
 }

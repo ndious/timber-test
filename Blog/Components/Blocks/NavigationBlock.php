@@ -5,9 +5,12 @@ use Tiimber\View;
 
 class NavigationBlock extends View
 { 
-  const TPL = <<<HTML
+  public function render(): string
+  {
+    return <<<HTML
 <nav>
   Ceci est une nav
 </nav>
 HTML;
+  }
 }

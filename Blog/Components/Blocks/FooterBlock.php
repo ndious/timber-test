@@ -5,10 +5,12 @@ use Tiimber\View;
 
 class FooterBlock extends View
 { 
-  const TPL = <<<HTML
+  public function render(): string
+  {
+    return  <<<HTML
 <footer>
   {{yolo}} {{id}}
 </footer>
 HTML;
-
+  }
 }

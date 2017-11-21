@@ -11,7 +11,7 @@ class IndexView extends View
     'request::article::index' => 'content'
   ];
 
-  const TPL = <<<EOF
+  const TPL = <<<HTML
 <ul>
   {{#articles}}
     <li>
@@ -29,11 +29,12 @@ class IndexView extends View
 {{^articles}}
   <p>No article available yet.</p>
 {{/articles}}
-EOF;
+HTML;
 
-  public function render(): array
+  public function render(): string
   {
     $articles = R::findAll('article','ORDER BY id DESC LIMIT 10');
-    return ['articles' => array_values($articles)];
+    return 'toto';
+     ['articles' => array_values($articles)];
   }
 }
