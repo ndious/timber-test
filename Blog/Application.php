@@ -6,20 +6,17 @@ use Tiimber\Loggers\SysLogger as Logger;
 
 use Rb\Redux\{Store, Reducer\ComposedReducer};
 
-use RedBeanPHP\R;
-
 use function Blog\Reducers\Catalogue\getReducer;
 
 class Application
 {
   use Tiimber;
   use Server;
-  
+
   private function prepare()
   {
     $this->setRoot(dirname(__DIR__));
     $this->setCacheFolder(dirname(__DIR__) . '/cache');
-    R::setup();
     $this->setHost('0.0.0.0');
     $this->setPort(9083);
     (new Logger());

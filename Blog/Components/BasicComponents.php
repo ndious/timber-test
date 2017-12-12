@@ -5,18 +5,18 @@ use Blog\Components\Blocks\NavigationBlock;
 use Blog\Components\Blocks\FooterBlock;
 
 trait BasicComponents
-{ 
-  public function Navigation()
+{
+  public function Navigation(): array
   {
     return [
-      'view' => new NavigationBlock(),
+      'view' => NavigationBlock::class,
     ];
   }
 
-  public function Footer()
+  public function Footer(): array
   {
     return [
-      'view' => new FooterBlock(),
+      'view' => FooterBlock::class,
     ];
   }
 }

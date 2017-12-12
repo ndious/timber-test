@@ -11,6 +11,8 @@ class BasicLayout extends View
 
   public function render(): string
   {
+    $this->setState(['test' => 'yeah']);
+
     return <<<HTML
 <!DOCTYPE html>
 <html>

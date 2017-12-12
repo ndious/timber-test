@@ -16,8 +16,10 @@ class IndexPage extends View
 
   public function render(): string
   {
+    $planet = 'world';
+
     return <<<HTML
-<p>hello {{planet}}.</p>
+<p>hello $planet.</p>
 HTML;
   }
 }

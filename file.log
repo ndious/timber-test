@@ -1,23 +1,10 @@
-PHP Fatal error:  Uncaught Error: Class '\Blog\Pages\ArticlePage' not found in /Users/nicolasdufreche/droplet/tiimber/vendor/ndufreche/tiimber/src/Loader.php:26
-Stack trace:
-#0 /Users/nicolasdufreche/droplet/tiimber/vend11/11/2017 ~ 9:27 [info] sessid: tiim5a06c0aeb7a390.83575277
-11/11/2017 ~ 9:27 [info] new GET request on /articles
-11/11/2017 ~ 9:27 [info] Response delivred in 1.82ms
-ndufreche/tiimber/src/Loader.php(43): Tiimber\Loader->load('pages', 'Blog', '/Users/nicolasd...')
-#2 /Users/nicolasdufreche/droplet/tiimber/vendor/ndufreche/tiimber/src/Loader.php(16): Tiimber\Loader->pagesLoading('Blog', '/Users/nicolasd...')
-#3 /Users/nicolasdufreche/droplet/tiimber/vendor/ndufreche/tiimber/src/Traits/ApplicationTrait.php(20): Tiimber\Loader->__construct('Blog')
-#4 /Users/nicolasdufreche/droplet/tiimber/Blog/Application.php(38): Blog\Application->chop()
-#5 /Users/nicolasdufreche/droplet/tiimber/server.php(5): Blog\Application->start()
-#6 {main}
-  thrown in /Users/nicolasdufreche/droplet/tiimber/vendor/ndufreche/tiimber/src/Loader.php on line 26
+11/12/2017 ~ 21:25 [info] Serveur listening at 0.0.0.0:9083
 
-Fatal error: Uncaught Error: Class '\Blog\Pages\ArticlePage' not found in /Users/nicolasdufreche/droplet/tiimber/vendor/ndufreche/tiimber/src/Loader.php:26
+Fatal error: Uncaught React\Socket\ConnectionException: Could not bind to tcp://0.0.0.0:9083: Address already in use in /Users/nicolasdufreche/Works/tiitest/vendor/react/react/src/Socket/Server.php:29
 Stack trace:
-#0 /Users/nicolasdufreche/droplet/tiimber/vendor/ndufreche/tiimber/src/Loader.php(87): Tiimber\Loader->loadFromDir('pages', '/Users/nicolasd...', '\\Blog\\Pages\\')
-#1 /Users/nicolasdufreche/droplet/tiimber/vendor/ndufreche/tiimber/src/Loader.php(43): Tiimber\Loader->load('pages', 'Blog', '/Users/nicolasd...')
-#2 /Users/nicolasdufreche/droplet/tiimber/vendor/ndufreche/tiimber/src/Loader.php(16): Tiimber\Loader->pagesLoading('Blog', '/Users/nicolasd...')
-#3 /Users/nicolasdufreche/droplet/tiimber/vendor/ndufreche/tiimber/src/Traits/ApplicationTrait.php(20): Tiimber\Loader->__construct('Blog')
-#4 /Users/nicolasdufreche/droplet/tiimber/Blog/Application.php(38): Blog\Application->chop()
-#5 /Users/nicolasdufreche/droplet/tiimber/server.php(5): Blog\Application->start()
-#6 {main}
-  thrown in /Users/nicolasdufreche/droplet/tiimber/vendor/ndufreche/tiimber/src/Loader.php on line 26
+#0 /Users/nicolasdufreche/Works/tiitest/vendor/nduf
+Warning: stream_select(): unable to select [4]: Interrupted system call (max_fd=3) in /Users/nicolasdufreche/Works/tiitest/vendor/react/react/src/EventLoop/StreamSelectLoop.php on line 255
+bject(Closure))
+#2 /Users/nicolasdufreche/Works/tiitest/server.php(5): Blog\Application->start()
+#3 {main}
+  thrown in /Users/nicolasdufreche/Works/tiitest/vendor/react/react/src/Socket/Server.php on line 29
