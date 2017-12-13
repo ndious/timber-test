@@ -9,7 +9,7 @@ class FooterBlock extends View
   {
     return <<<HTML
 <footer>
-  {{yolo}}
+  {$this->props->propsParam}
 </footer>
 HTML;
   }

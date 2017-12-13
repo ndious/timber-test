@@ -25,9 +25,9 @@ class BasicLayout extends View
       <Navigation />
     </header>
     <div>
-      {{{ children }}}
+      {$this->props->children}
     </div>
-    <Footer yolo={test} />
+    <Footer propsParam={test} />
   </body>
 </html>
 HTML;
