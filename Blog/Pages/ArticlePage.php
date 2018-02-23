@@ -9,18 +9,15 @@ class ArticlePage extends View
   const EXTEND = BasicLayout::class;
 
   const EVENTS = [
-    'request::article::index',
-    'error::*',
+    'request::article::index'
   ];
-  
-  const TPL = <<<HTML
-<p>hello {{planet}}.</p>
-HTML;
 
   public function render(): string
   {
-    return [
-      'planet' => 'article'
-    ];
+    $planet = 'article';
+
+    return <<<HTML
+<p>hello {$planet}.</p>
+HTML;
   }
 }
