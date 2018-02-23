@@ -4,18 +4,18 @@ namespace Blog\Pages;
 use Tiimber\View;
 use Blog\Layouts\BasicLayout;
 
-class NoPage extends View
+class NoRoutePage extends View
 {
   const EXTEND = BasicLayout::class;
 
-  const TPL = <<<HTML
-<p>hello {{planet}}.</p>
-HTML;
+  const EVENTS = [
+    'error::404',
+  ];
 
   public function render(): string
   {
-    return [
-      'planet' => 'article'
-    ];
+    return <<<HTML
+<p>Page not found</p>
+HTML;
   }
 }

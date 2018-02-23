@@ -10,13 +10,14 @@ class ErrorPage extends View
   const EXTEND = BasicLayout::class;
 
   const EVENTS = [
-    'error::*',
+    'error::500',
   ];
 
   public function render(): string
   {
     return <<<HTML
-<p>Oups an error has been raised.</p>
+<h1>Oups an error has been raised.</h1>
+<p>{$this->props->error}</p>
 HTML;
   }
 }
