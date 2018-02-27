@@ -1,7 +1,7 @@
 <?php
 namespace Blog\Layouts;
 
-use Tiimber\View;
+use Tiimber\Renderer\Base\View;
 
 use Blog\Components\BasicComponents;
 

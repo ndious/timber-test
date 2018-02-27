@@ -1,10 +1,12 @@
 <?php
 namespace Blog\Components\Blocks;
 
-use Tiimber\View;
+use Tiimber\Renderer\Base\Block;
 
-class FooterBlock extends View
+class FooterBlock extends Block
 {
+  const SCOPE = 'Basic';
+
   public function render(): string
   {
     return <<<HTML

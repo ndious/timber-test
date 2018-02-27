@@ -1,7 +1,7 @@
 <?php
 namespace Blog\Pages;
 
-use Tiimber\View;
+use Tiimber\Renderer\Base\View;
 use Blog\Layouts\BasicLayout;
 
 class NoRoutePage extends View
